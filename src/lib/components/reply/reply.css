@@ -1,3 +1,5 @@
+@import '../author-info/author-info.css';
+
 .discord-replied-message {
 	color: #b9bbbe;
 	display: flex;
@@ -142,5 +144,3 @@
 	height: 20px;
 	margin-left: 4px;
 }
-
-@import '../author-info/author-info.css';

@@ -1,3 +1,5 @@
+@import '../discord-reply/discord-reply.css';
+
 .discord-replied-message.discord-executed-command .discord-command-name {
 	color: #00aff4;
 	font-weight: 500;
@@ -11,5 +13,3 @@
 .discord-replied-message.discord-executed-command .discord-replied-message-username {
 	margin-right: 0;
 }
-
-@import '../discord-reply/discord-reply.css';

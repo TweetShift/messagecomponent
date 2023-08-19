@@ -1,3 +1,5 @@
+@import '../author-info/author-info.css';
+
 .discord-message {
 	color: #dcddde;
 	display: flex;
@@ -288,5 +290,3 @@
 	margin-right: 4px;
 	vertical-align: text-bottom;
 }
-
-@import '../author-info/author-info.css';

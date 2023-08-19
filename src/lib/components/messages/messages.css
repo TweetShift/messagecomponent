@@ -1,21 +1,24 @@
 @import url('https://fonts.bunny.net/css?family=roboto:400,500,700');
 
-/* New Whitney fonts to match rebrading */
+/* New Whitney fonts to match rebranding */
 @font-face {
 	font-family: 'Whitney';
 	src: url('https://cdn.skyra.pw/whitney-font/v2/Book.woff') format('woff');
 	font-weight: 400;
 }
+
 @font-face {
 	font-family: 'Whitney';
 	src: url('https://cdn.skyra.pw/whitney-font/v2/Medium.woff') format('woff');
 	font-weight: 500;
 }
+
 @font-face {
 	font-family: 'Whitney';
 	src: url('https://cdn.skyra.pw/whitney-font/v2/Semibold.woff') format('woff');
 	font-weight: 600;
 }
+
 @font-face {
 	font-family: 'Whitney';
 	src: url('https://cdn.skyra.pw/whitney-font/v2/Bold.woff') format('woff');

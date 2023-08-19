@@ -1,3 +1,5 @@
+@import '../author-info/author-info.css';
+
 .discord-system-message {
 	color: #8e9297;
 	display: flex;
@@ -137,5 +139,3 @@
 .discord-light-theme .discord-system-message.discord-system-message-has-thread:after {
 	border-color: #747f8d;
 }
-
-@import '../author-info/author-info.css';
