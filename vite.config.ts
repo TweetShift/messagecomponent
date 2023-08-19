@@ -8,6 +8,14 @@ import svg from '@poppanator/sveltekit-svg';
 export default defineConfig({
 	plugins: [sveltekit(), svg()],
 	histoire: {
-		plugins: [HstSvelte()]
+		plugins: [HstSvelte()],
+		theme: {
+			title: 'Discord Message Component',
+			logo: {
+				square: './static/3.png',
+				light: './static/3.png',
+				dark: './static/3.png'
+			}
+		}
 	}
 });
