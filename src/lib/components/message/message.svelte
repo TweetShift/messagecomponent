@@ -1,10 +1,11 @@
 <script lang="ts">
+	import './message.css';
+
 	import { type DiscordTimestamp, handleTimestamp } from '$lib/utils/util';
-	import { defaultDiscordAvatars } from '$lib/options/options';
+	import { defaultDiscordAvatars } from '$lib/utils/options';
 	import AuthorInfo from '$lib/components/author-info/author-info.svelte';
 	import Ephemeral from '$lib/svgs/ephemeral.svg?component';
 	import { onMount } from 'svelte';
-	import './message.css';
 
 	/**
 	 * The message author's username.
@@ -48,17 +49,17 @@
 	/**
 	 * The message author's primary role color. Can be any [CSS color value](https://www.w3schools.com/cssref/css_colors_legal.asp).
 	 */
-	export let roleColor: string;
+	export let roleColor: string | undefined = undefined;
 
 	/**
 	 * The message author's role icon URL.
 	 */
-	export let roleIcon: string;
+	export let roleIcon: string | undefined = undefined;
 
 	/**
 	 * The name of the role to use as alternative image text.
 	 */
-	export let roleName: string;
+	export let roleName: string | undefined = undefined;
 
 	/**
 	 * Whether to highlight this message.
@@ -111,7 +112,7 @@
 			<img src={avatar} alt={author} />
 		</div>
 		<div class="discord-message-content">
-			{#if compactMode}
+			{#if !compactMode}
 				<AuthorInfo
 					author={author ?? ''}
 					bot={bot ?? false}

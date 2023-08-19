@@ -3,17 +3,17 @@
 	/**
 	 * Whether to use light theme or not.
 	 */
-	export let lightTheme: boolean;
+	export let lightTheme = false;
 
 	/**
 	 * Whether to exclude the background or not.
 	 */
-	export let noBackground: boolean;
+	export let noBackground = false;
 
 	/**
 	 * Whether to use compact mode or not.
 	 */
-	export let compactMode: boolean;
+	export let compactMode = false;
 </script>
 
 <div

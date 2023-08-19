@@ -11,7 +11,10 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"fix": "eslint --fix . && prettier --plugin-search-dir . --write ."
+		"fix": "eslint --fix . && prettier --plugin-search-dir . --write .",
+		"story:dev": "histoire dev",
+		"story:build": "histoire build",
+		"story:preview": "histoire preview"
 	},
 	"exports": {
 		".": {
@@ -50,10 +53,12 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
+		"@histoire/plugin-svelte": "^0.16.5",
 		"@skyra/discord-components-core": "^3.6.0",
 		"@tiptap/core": "^2.0.4",
 		"@tiptap/pm": "^2.0.4",
 		"@tiptap/starter-kit": "^2.0.4",
-		"hex-to-rgba": "^2.0.1"
+		"hex-to-rgba": "^2.0.1",
+		"histoire": "^0.16.5"
 	}
 }

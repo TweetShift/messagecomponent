@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { defaultDiscordAvatars } from '$lib/options/options';
+	import { defaultDiscordAvatars } from '$lib/utils/options';
 	import VerifiedTick from '$lib/svgs/verified-tick.svg?component';
 	import './thread-message.css';
 

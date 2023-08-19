@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { defaultDiscordAvatars } from '$lib/options/options';
+	import { defaultDiscordAvatars } from '$lib/utils/options';
 	import GuildBadge from '$lib/svgs/guild-badge.svg?component';
 	import PartnerBadgeOverlay from '$lib/svgs/partner-badge-overlay.svg?component';
 	import VerifiedBadgeOverlay from '$lib/svgs/verified-badge-overlay.svg?component';
