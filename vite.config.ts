@@ -1,21 +1,12 @@
-/// <reference types="histoire" />
-
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
-import { HstSvelte } from '@histoire/plugin-svelte';
-import svg from '@poppanator/sveltekit-svg';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-	plugins: [sveltekit(), svg()],
-	histoire: {
-		plugins: [HstSvelte()],
-		theme: {
-			title: 'Discord Message Component',
-			logo: {
-				square: './static/3.png',
-				light: './static/3.png',
-				dark: './static/3.png'
-			}
-		}
+	plugins: [sveltekit()],
+	test: {
+		include: ['src/**/*.{test,spec}.{js,ts}']
+	},
+	optimizeDeps: {
+		exclude: ['@odiffey/discord-markdown', '@khanacademy/simple-markdown']
 	}
 });

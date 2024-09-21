@@ -1,10 +1,22 @@
 <script lang="ts">
-	import Message from '$lib/components/message';
-	import Messages from '$lib/components/messages';
+	import '@skyra/discord-components-core';
+	import type { PageServerData } from './$types';
+
+	export let data: PageServerData;
 </script>
 
-<h1>hello world</h1>
+<svelte:head>
+	<link rel="stylesheet" href="/fonts?id={Math.random()}" />
+</svelte:head>
 
-<Messages lightTheme>
-	<Message>Hello world!</Message>
-</Messages>
+{#if data.message}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html data.message}
+{/if}
+
+<style>
+	:global(body) {
+		padding: 0;
+		margin: 0;
+	}
+</style>
